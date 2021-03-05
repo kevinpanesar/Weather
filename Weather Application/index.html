@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\stylesheet.css">
+    <title>Document</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <img src="./Media/clipart2372176.png" width="145px" alt="weatherLogo">
+    </header>
+    <main>
+        <form id="Input">
+            <input type="text" id="userInput" placeholder="  City Name">
+            <button type="button" id="submit">Submit</button><br>
+        </form>
+
+        <div id="desktopContainer">
+                    <div id="weather">
+                        <h2>Current Weather</h2>
+                        <div id="coloredBackground">
+                    
+                            <h3 id='currentWeatherSubtitle'> </h3>
+                            <h3 id='cityName'></h3>
+                            <h3 id="country"></h3>
+                            <div id="tempHumidty">
+                                <h3 id='temp'></h3>
+                                <h3 id='humidity'></h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id='sevenDayForecast'>
+                        <h2>7 Day Forecast</h2>
+                        <ol>
+                            <li id='day1List'>
+                                <h3 id="day1"></h3>
+                                <h4 id="day1Weather"></h4>
+                                <h4 id="sevenDayTemp1"></h4>
+                            </li>
+                            <li id='day2List'>
+                                <h3 id="day2"></h3>
+                                <h4 id="day2Weather"></h4>
+                                <h4 id="sevenDayTemp2"></h4>
+                            </li>
+                            <li id='day3List'>
+                                <h3 id="day3"></h3>
+                                <h4 id="day3Weather"></h4>
+                                <h4 id="sevenDayTemp3"></h4>
+                            </li>
+                            <li id='day4List'>
+                                <h3 id="day4"></h3>
+                                <h4 id="day4Weather"></h4>
+                                <h4 id="sevenDayTemp4"></h4>
+                            </li>
+                            <li id='day5List'>
+                                <h3 id="day5"></h3>
+                                <h4 id="day5Weather"></h4>
+                                <h4 id="sevenDayTemp5"></h4>
+                            </li>
+                            <li id='day6List'>
+                                <h3 id="day6"></h3>
+                                <h4 id="day6Weather"></h4>
+                                <h4 id="sevenDayTemp6"></h4>
+                            </li>
+                            <li id='day7List'>
+                                <h3 id="day7"></h3>
+                                <h4 id="day7Weather"></h4>
+                                <h4 id="sevenDayTemp7"></h4>
+                            </li>
+                        </ol>
+                    </div>
+        </div>
+       
+    </main>
+
+</body>
+<script src="./app.js" defer></script>
+</html>
