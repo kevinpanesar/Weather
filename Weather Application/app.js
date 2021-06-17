@@ -18,7 +18,7 @@ submitButton.onclick = async () => {
     let cityValue = document.getElementById('userInput').value;
 
     //Fetch data for current weather from API
-    currentWatherURL = `http://api.openweathermap.org/data/2.5/weather?q=${cityValue}&units=metric&appid=a23ae3b876b39f083c12d90f6c69bbf2`;
+    currentWatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&units=metric&appid=a23ae3b876b39f083c12d90f6c69bbf2`;
     let currentWeatherResponse = await fetch(currentWatherURL);
     let data = await currentWeatherResponse.json();
 
