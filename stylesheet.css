@@ -1,0 +1,793 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+    background-color: white;
+  }
+
+  header {
+    padding-bottom: 35px;
+    padding-top: 15px;
+    background-color: #f0efef;
+  }
+
+  button {
+    width: 19%;
+    background-color: #176ED9;
+    border-radius: 4px;
+    color: white;
+    border: none;
+   font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+  }
+
+  button:hover{
+      background-color: #7275db;
+  }
+
+
+ main {
+     background-color: #f0efef;
+     color: black;
+     width: 100%;
+     min-height:80vh;
+     padding-bottom: 50px;
+     font-family: 'Oswald', sans-serif;
+
+ }
+
+ #desktopContainer {
+   width: 100%;
+   display: none;
+ }
+
+
+ #weather {
+     background-color: #176ED9;
+     text-align: center;
+     border-radius: 15px;
+     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 60%), 0 6px 20px 0 rgb(0 0 0 / 10%);
+     margin: 0 auto;
+     padding-bottom: 15px;
+     color: white;
+ }
+
+  #currentWeatherSubtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+  #country {
+     padding-top: 10px;
+ }
+
+
+  #coloredBackground {
+     background: #4c9cff;
+     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 60%), 0 6px 20px 0 rgb(0 0 0 / 10%);
+     padding-top: 10px;
+     height: 260px;
+     margin-top: 15px;
+     border-radius: 15px;
+ }
+
+
+
+  #sevenDayForecast {
+     background-color:#176ED9;
+     border-radius: 15px;
+     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 60%), 0 6px 20px 0 rgb(0 0 0 / 10%);
+      margin: 0 auto;
+      color: white;
+ }
+
+   #sevenDayForecast ol li {
+      background: #4c9cff;
+      list-style: none;
+      border-radius: 15px;
+      box-shadow: 0 2px 5px 0 rgb(0 0 0 / 60%), 0 6px 20px 0 rgb(0 0 0 / 10%);
+     
+  }
+
+  #sevenDayForecast ol {
+      width: 90%;
+  }
+
+
+   h2 {
+      color: #ffffff;
+  }
+
+  #Input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #submit{
+      margin-left: 5px;
+  }
+
+  #userInput{
+      border-radius: 4px;
+      padding-left: 5px;
+      font-family: 'Oswald', sans-serif;
+      font-size: larger;
+      letter-spacing: 2px;
+
+  }
+
+@media only screen and (min-width: 1854px){
+
+ ol {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-around;
+    
+     }
+     
+ #tempHumidty {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding-top: 25px;
+ }
+
+li {
+     width: 350px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 20px;
+
+      }
+
+li h3 {
+     padding-top: 10px;
+     font-size: 30px;
+    }
+
+#coloredBackground {
+    width: 87%;
+    height: 380px;
+   }
+
+ li h4 {
+     font-size: 25px;
+ }
+
+ li img {
+     width: 50%;
+ }
+
+ #sevenDayForecast {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     margin-top: 50px;
+     font-size: 19px;
+     width: 70%;
+     padding-bottom: 20px;
+ }
+
+ #sevenDayForecast h2 {
+     padding: 25px;
+ }
+
+  body {
+      margin: 0 auto;
+      width: 60%;
+    font-size: larger;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 60%), 0 6px 20px 0 rgb(0 0 0 / 10%);
+  }
+
+ #desktopContainer {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+
+      display: none;
+ }
+
+#weather {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 40px;
+    font-size: 25px;
+    
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+input {
+    width: 72%;
+    height: 50px;
+}
+
+button {
+    width: 26%;
+    height: 52px;
+    font-size: 18px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 2070px){
+
+    ol {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-around;
+     width: 75%;
+     
+     }
+     
+  #tempHumidty {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding-top: 25px;
+ }
+
+    li {
+     width: 170px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 15px;
+      }
+
+    li h3 {
+     padding-top: 10px;
+    }
+
+   #coloredBackground {
+    width: 87%;
+    height: 380px;
+   }
+
+ li h4 {
+     font-size: 15px;
+ }
+
+ li img {
+     width: 50%;
+ }
+
+ #sevenDayForecast {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     margin-top: 50px;
+     font-size: 19px;
+     width: 75%;
+ }
+
+ #sevenDayForecast h2 {
+     padding: 25px;
+     font-size: 25px;
+ }
+
+  main {
+      height: 650px;
+  }
+
+ #desktopContainer {
+     height: 1200px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     display: none;
+     
+ }
+
+#weather {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+input {
+    width: 70%;
+    height: 30px;
+}
+
+button {
+    width: 27%;
+    height: 35px;
+    font-size: 20px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+}
+
+@media only screen and (min-width: 639px)  and (max-width: 1024px) {
+
+ ol {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-around;
+     height: 720px;
+     
+ }
+
+   #tempHumidty {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+ li {
+     width: 30%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ li h3 {
+     padding-top: 10px;
+ }
+
+ li h4 {
+     font-size: 15px;
+ }
+
+ li img {
+     width: 50%;
+ }
+
+ #sevenDayForecast {
+     height: 750px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     margin-top: 50px;
+     font-size: 19px;
+     width: 90%;
+ }
+
+ #sevenDayForecast h2 {
+     padding: 25px;
+     font-size: 25px;
+ }
+
+ #desktopContainer {
+     height: 1200px;
+     display: none;
+     
+ }
+
+#weather {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input {
+    width: 70%;
+    height: 30px;
+}
+
+button {
+    width: 27%;
+    height: 35px;
+    font-size: 20px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+#coloredBackground{
+     width: 90%;
+}
+}
+
+@media only screen and (min-width: 426px)  and (max-width: 638px) {
+
+#coloredBackground {
+    height: 310px; 
+    width: 90%;
+      }
+
+#country {
+     padding-top: 20px;
+ }
+
+   #tempHumidty {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+header {
+      
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+form {
+    width: 90%;
+}
+
+input {
+    width: 74%;
+    height: 30px;
+    font-size: 20px;
+}
+
+button {
+    height: 35px;
+    width: 23%;
+}
+
+ main {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-direction: column;
+     font-size: 20px;
+ }
+
+ #tempHumidty {
+     margin-top: 20px;
+ }
+
+
+ #Input {
+     margin-top: 20px;
+ }
+
+ #weather {
+     margin-top: 20px;
+     width: 90%;
+     height: 400px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ #sevenDayForecast {
+     width: 90%;
+     height: 1150px;
+     margin-top: 25px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     overflow: hidden;  
+ }
+
+  #sevenDayForecast ol li {
+      height: 5%;
+      margin-bottom: 10px;
+      width: 100%;
+  }
+
+
+  #sevenDayForecast h2 {
+      padding-left: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+   
+  }
+
+    li img {
+        width: 150px;
+        margin-top: 150px;
+
+  }
+
+  li {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      width: 90%;
+  }
+
+  li h3, li h4 {
+      margin-left: 20px;
+  }
+
+    li img {
+      float: right;
+      position: relative;
+      bottom: 80px;
+
+  }
+
+  #desktopContainer {
+      padding-bottom: 20px;
+      display: none;
+  }
+
+}
+
+
+@media only screen and (min-width: 329px)  and (max-width: 426px) {
+
+
+header {    
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tempHumidty {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+form {
+    width: 90%;
+}
+
+input {
+    width: 78%;
+    height: 30px;
+}
+
+button {
+    height: 35px;
+
+}
+
+main {
+
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-direction: column;
+ }
+
+
+ #Input {
+     margin-top: 20px;
+ }
+
+ #weather {
+
+     margin-top: 20px;
+     width: 90%;
+     height: 340px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+
+ }
+
+ #sevenDayForecast {
+     width: 90%;
+     height: 1000px;
+     margin-top: 25px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     overflow: hidden;
+ }
+
+
+
+  #sevenDayForecast h2 {
+      padding-left: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+
+    li img {
+      width: 30%;
+      margin-top: 150px;
+
+  }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      height: 120px;
+      margin-bottom: 20px;
+      width: 100%;
+   
+  }
+
+  li h3, li h4 {
+      margin-left: 20px;
+  }
+
+    li img {
+      float: right;
+      position: relative;
+      bottom: 80px;
+
+  }
+
+#coloredBackground{
+     width: 90%;
+}
+
+}
+
+@media only screen and (max-width: 329px){
+
+    header {
+      
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+
+  #tempHumidty {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+form {
+    width: 90%;
+}
+
+input {
+    width: 70%;
+    height: 30px;
+
+}
+
+button {
+    height: 35px;
+    width: 26%;
+
+}
+ main {
+
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ #Input {
+     margin-top: 20px;
+ }
+
+ #weather {
+
+     margin-top: 20px;
+     width: 90%;
+     height: 340px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+
+ }
+
+ #sevenDayForecast {
+     width: 90%;
+     height: 1200px;
+     margin-top: 25px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-size: 15px;
+
+ }
+
+  #sevenDayForecast ol li {
+      height: 150px;
+      margin-bottom: 10px;
+      width: 100%;
+  }
+
+
+  #sevenDayForecast h2 {
+      padding-left: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+
+    li img {
+      float: right;
+      position: relative;
+      bottom: 80px;
+      width: 30%;
+
+  }
+
+  li h3, li h4 {
+      padding: 8px;
+  }
+
+  
+#coloredBackground{
+     width: 90%;
+}
+
+} 
